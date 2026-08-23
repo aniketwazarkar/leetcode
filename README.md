@@ -2,7 +2,7 @@
 
 My solutions to the [Striver SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems), solved on LeetCode.
 
-This repo is automated with [leetpush](https://github.com/aniketwazarkar/leetpush) — every time I submit an accepted solution, it's pushed here automatically with the problem statement and my code.
+This repo is automated with [LeetPush](https://github.com/LeetPushExtension/LeetPush) — every time I submit an accepted solution, it's pushed here automatically with the problem statement and my code.
 
 ## Structure
 
