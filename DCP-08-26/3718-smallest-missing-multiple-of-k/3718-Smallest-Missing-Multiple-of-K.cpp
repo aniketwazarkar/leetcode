@@ -1,27 +1,13 @@
 class Solution {
 public:
-
-    int findMissing(unordered_map<int, int>& mp, int k) {
-        int multiple = k;
-
-        while (true) {
-            if (mp.find(multiple) == mp.end()) {
-                return multiple;
-            }
-
-            multiple += k;
-        }
-    }
-
     int missingMultiple(vector<int>& nums, int k) {
-        unordered_map<int, int> mp;
+        unordered_set<int> seen(nums.begin(), nums.end());
 
-        for (int q : nums) {
-            mp[q]++;
+        int cur = k;
+        while (seen.count(cur)) {
+            cur += k;
         }
 
-        int ans = findMissing(mp, k);
-
-        return ans;
+        return cur;
     }
 };
